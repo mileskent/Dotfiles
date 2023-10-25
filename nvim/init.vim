@@ -5,3 +5,4 @@ set shiftwidth=4
 set mouse=a
 set number
 set relativenumber
+set cursorline
