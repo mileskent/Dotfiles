@@ -6,3 +6,4 @@ set mouse=a
 set number
 set relativenumber
 set cursorline
+hi CursorLine cterm=bold ctermbg=black
