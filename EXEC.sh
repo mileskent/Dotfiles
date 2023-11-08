@@ -21,14 +21,15 @@ lookandfeeltool -a org.kde.breezedark.desktop
 
 # Discord
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-sudo apt install ./discord.deb
+sudo apt install -y ./discord.deb && rm ./discord.deb
 
 # build-essential
 sudo apt install -y build-essential
 
 # neovim wl-clipboard
 sudo apt install -y neovim wl-clipboard
-mkdir ~/.config/nvim && cp nvim/init.vim ~/.config/nvim/init.vim
+mkdir ~/.config/nvim
+cp nvim/init.vim ~/.config/nvim/init.vim
 
 # githubcli
 type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
@@ -47,4 +48,4 @@ sudo apt update && sudo apt install kwin-bismuth
 # firefox addons
 # julia
 
-systemctl reboot
+echo "systemctl reboot"
