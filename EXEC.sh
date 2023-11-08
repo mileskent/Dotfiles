@@ -1,4 +1,10 @@
-all syssettings
-bismuth
-build-essential
-neovim wl-clipboard
+su
+sudo usermod -aG sudo alexkca
+exit
+
+# all syssettings
+# bismuth
+# build-essential
+# neovim wl-clipboard
+
+reboot
