@@ -6,4 +6,4 @@ sudo usermod -aG sudo alexkca
 # build-essential
 # neovim wl-clipboard
 
-reboot
+sudo reboot
