@@ -1,6 +1,5 @@
-su
+# su
 sudo usermod -aG sudo alexkca
-exit
 
 # all syssettings
 # bismuth
