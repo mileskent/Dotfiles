@@ -1,4 +1,4 @@
-su
+# Run su first
 sudo usermod -aG sudo alexkca
 sudo apt update && sudo apt upgrade
 
