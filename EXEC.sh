@@ -14,7 +14,7 @@ sudo apt update && sudo apt upgrade
 # github ssh
 # gh
 
-
+# firefox addons
 # bismuth
 
 sudo reboot
