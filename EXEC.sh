@@ -30,4 +30,5 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 # Remove hot corner
 # Add virtual desktops
 
-systemctl reboot
+echo 'Run systemctl reboot when ready\n'
+# systemctl reboot
