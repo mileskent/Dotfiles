@@ -11,6 +11,18 @@ lookandfeeltool -a org.kde.breezedark.desktop
 # https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
 # https://askubuntu.com/questions/403113/how-do-you-enable-tap-to-click-via-command-line
 
+# Flat mouse
+
+# Remove hot corner
+
+# Add virtual desktops (2x3)
+
+# konsole settings and profiles
+
+# Discord
+wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+sudo apt install ./discord.deb
+
 # build-essential
 sudo apt install -y build-essential
 
@@ -33,10 +45,6 @@ sudo apt update && sudo apt install kwin-bismuth
 
 # github ssh
 # firefox addons
-# konsole settings and profiles
-# Flat mouse
-# Remove hot corner
 # julia
-# Add virtual desktops
 
 systemctl reboot
