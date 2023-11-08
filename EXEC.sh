@@ -17,6 +17,11 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && sudo apt update \
 && sudo apt install gh -y
 
+# bismuth - tiling will need to be turned on still after reboot
+echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list > /dev/null
+wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+sudo apt update && sudo apt install kwin-bismuth
+
 # TODO
 # Tap to Click
   # https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
@@ -24,10 +29,10 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 # github ssh
 # firefox addons
 # konsole settings and profiles
-# bismuth
 # Flat mouse
 # Dark theme
 # Remove hot corner
+# julia
 # Add virtual desktops
 
 systemctl reboot
