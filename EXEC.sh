@@ -1,6 +1,15 @@
 # Run su first
+
+# setup sudo
 sudo usermod -aG sudo alexkca
 sudo apt update && sudo apt upgrade
+
+# Dark theme
+lookandfeeltool -a org.kde.breezedark.desktop
+
+# Tap to Click
+# https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
+# https://askubuntu.com/questions/403113/how-do-you-enable-tap-to-click-via-command-line
 
 # build-essential
 sudo apt install -y build-essential
@@ -22,15 +31,10 @@ echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.l
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 sudo apt update && sudo apt install kwin-bismuth
 
-# TODO
-# Tap to Click
-  # https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
-  # https://askubuntu.com/questions/403113/how-do-you-enable-tap-to-click-via-command-line
 # github ssh
 # firefox addons
 # konsole settings and profiles
 # Flat mouse
-# Dark theme
 # Remove hot corner
 # julia
 # Add virtual desktops
