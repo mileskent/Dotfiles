@@ -2,13 +2,19 @@ su
 sudo usermod -aG sudo alexkca
 sudo apt update && sudo apt upgrade
 
-# Tap to Click
+# TODO: Tap to Click
 # Flat mouse
 # Dark theme
+# Remove hot corner
+# Add virtual desktops
 
-# all syssettings
-# bismuth
 # build-essential
 # neovim wl-clipboard
+
+# github ssh
+# gh
+
+
+# bismuth
 
 sudo reboot
