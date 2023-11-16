@@ -1,6 +1,0 @@
-[submodule "suckless/dwm"]
-	path = suckless/dwm
-	url = https://git.suckless.org/dwm
-[submodule "suckless/dmenu"]
-	path = suckless/dmenu
-	url = https://git.suckless.org/dmenu
