@@ -1,4 +1,3 @@
-# Run su first
 
 # setup sudo
 sudo usermod -aG sudo alexkca
