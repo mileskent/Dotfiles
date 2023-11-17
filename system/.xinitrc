@@ -58,9 +58,6 @@ xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Speed' -
 # draw wallpaper
 nitrogen --restore &
 
-# compositor
-picom &
-
 # start dwm
 exec dwm
 
