@@ -48,7 +48,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# start dwm
-exec dwm
 # set resolution and refresh rate
 xrandr --output HDMI-A-0 --mode 1920x1080 --rate 144
+# start dwm
+exec dwm
+
