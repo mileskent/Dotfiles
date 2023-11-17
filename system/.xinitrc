@@ -50,9 +50,17 @@ fi
 
 # set resolution and refresh rate
 xrandr --output HDMI-A-0 --mode 1920x1080 --rate 144
-# set mouse settings
+
+# mouse stuff 
 xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Profile Enabled' 0, 1
 xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Speed' -0.1
+
+# draw wallpaper
+nitrogen --restore &
+
+# compositor
+picom &
+
 # start dwm
 exec dwm
 
