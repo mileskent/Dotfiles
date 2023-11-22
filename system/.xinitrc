@@ -58,6 +58,10 @@ xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Speed' -
 # draw wallpaper
 nitrogen --restore &
 
+/bin/bash ~/.suckless/udbar.sh &
+
+xbindkeys
+
 # start dwm
 exec dwm
 
