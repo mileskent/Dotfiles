@@ -9,6 +9,10 @@ getwifi() {
     fi
 }
 
+gettemp() {
+    echo "$(curl -s wttr.in?format=%t | sed 's/[^0-9-]//g')°"
+}
+
 counter=0
 while :; do
     # quarterhourly update
@@ -26,7 +30,7 @@ while :; do
     volume=$(pamixer --get-volume)
 
     # set bar
-    xsetroot -name "|  $weather | $(getwifi) | 󱄠 $volume% |   $dateinfo |  $time |"
+    xsetroot -name "|  $(gettemp) | $(getwifi) | 󱄠 $volume% |   $dateinfo |  $time |"
     sleep 1s
     let 'counter++'
 done
