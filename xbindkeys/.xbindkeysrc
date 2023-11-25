@@ -1,0 +1,24 @@
+###########################
+# xbindkeys configuration #
+###########################
+
+# Increase Volume
+"pactl set-sink-volume @DEFAULT_SINK@ +1%"
+    Mod4 + k
+"pactl set-sink-volume @DEFAULT_SINK@ +1%"
+    XF86AudioRaiseVolume
+
+# Decrease Volume
+"pactl set-sink-volume @DEFAULT_SINK@ -1%"
+    Mod4 + j
+"pactl set-sink-volume @DEFAULT_SINK@ -1%"
+    XF86AudioLowerVolume
+
+# Rectangular Screenshot
+"scrot -s -e 'xclip -selection clipboard -t image/png -i $f'"
+    Shift+Alt + s
+
+
+# Start firefox
+"exec firefox"
+    Shift+Alt + w
