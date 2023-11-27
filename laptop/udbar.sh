@@ -14,6 +14,7 @@ gettemp() {
 }
 
 getbattery() {
+    # add dynamic battery eventually
     echo "$(acpi -b | grep -oP '\d+%')"
 }
 
@@ -35,7 +36,7 @@ while :; do
     volume=$(pamixer --get-volume)
 
     # set bar
-    xsetroot -name "| $(battery) |  $(gettemp) | $(getwifi) | 󱄠 $volume% |   $dateinfo |  $time |"
+    xsetroot -name "|  $battery |  $(gettemp) | $(getwifi) | 󱄠 $volume% |   $dateinfo |  $time |"
     sleep 1s
     let 'counter++'
 done

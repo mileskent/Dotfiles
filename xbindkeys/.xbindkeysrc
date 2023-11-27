@@ -3,15 +3,15 @@
 ###########################
 
 # Increase Volume
-"pactl set-sink-volume @DEFAULT_SINK@ +1%"
+"pactl set-sink-volume @DEFAULT_SINK@ +1% && pkill -RTMIN+10 dwmblocks"
     Mod4 + k
-"pactl set-sink-volume @DEFAULT_SINK@ +1%"
+"pactl set-sink-volume @DEFAULT_SINK@ +1% && pkill -RTMIN+10 dwmblocks"
     XF86AudioRaiseVolume
 
 # Decrease Volume
-"pactl set-sink-volume @DEFAULT_SINK@ -1%"
+"pactl set-sink-volume @DEFAULT_SINK@ -1% && pkill -RTMIN+10 dwmblocks"
     Mod4 + j
-"pactl set-sink-volume @DEFAULT_SINK@ -1%"
+"pactl set-sink-volume @DEFAULT_SINK@ -1% && pkill -RTMIN+10 dwmblocks"
     XF86AudioLowerVolume
 
 # Rectangular Screenshot
