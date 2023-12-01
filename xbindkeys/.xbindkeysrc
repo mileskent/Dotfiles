@@ -15,7 +15,7 @@
     XF86AudioLowerVolume
 
 # Rectangular Screenshot
-"scrot -s -e 'xclip -selection clipboard -t image/png -i $f'"
+"scrot --select --line mode=edge -e 'xclip -selection clipboard -t image/png -i $f'"
     Shift+Alt + s
 
 
