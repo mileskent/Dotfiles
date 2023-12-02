@@ -1,13 +1,13 @@
 require('lualine').setup {
     options = {
-        icons_enabled = true,
-        theme = 'gruvbox',
+        icons_enabled=true,
+        theme='catppuccin-frappe',
     },
     sections = {
         lualine_a = {
             {
                 'filename',
-                path = 1,
+                path=1,
             }
         }
     }
