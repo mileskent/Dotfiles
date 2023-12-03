@@ -8,21 +8,38 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Agave Nerd Font:size=16" };
 static const char dmenufont[]       = "Agave Nerd Font:size=16";
-static const char col_gray1[]       = "#222222";
-static const char col_black[]       = "#000000";
-static const char col_white[]       = "#FFFFFF";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const char col_hl[]          = "#F66A4F";
-static const char col_hl2[]          = "#FE9159";
-static const char col_bg[]          = "#4C6270";
-static const char col_bg2[]          = "#94433F";
+static const char rosewater[] = "#f2d5cf";
+static const char flamingo[] = "#eebebe";
+static const char pink[] = "#f4b8e4";
+static const char mauve[] = "#ca9ee6";
+static const char red[] = "#e78284";
+static const char maroon[] = "#ea999c";
+static const char peach[] = "#ef9f76";
+static const char yellow[] = "#e5c890";
+static const char green[] = "#a6d189";
+static const char teal[] = "#81c8be";
+static const char sky[] = "#99d1db";
+static const char sapphire[] = "#85c1dc";
+static const char blue[] = "#8caaee";
+static const char lavender[] = "#babbf1";
+static const char text[] = "#c6d0f5";
+static const char subtext1[] = "#b5bfe2";
+static const char subtext0[] = "#a5adce";
+static const char overlay2[] = "#949cbb";
+static const char overlay1[] = "#838ba7";
+static const char overlay0[] = "#737994";
+static const char surface2[] = "#626880";
+static const char surface1[] = "#51576d";
+static const char surface0[] = "#414559";
+static const char base[] = "#303446";
+static const char mantle[] = "#292c3c";
+static const char crust[] = "#232634";
+
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-    [SchemeNorm] = { col_hl , col_bg },
-	[SchemeSel] = { col_hl2 , col_bg2},
+    [SchemeNorm] = { lavender , base },
+	[SchemeSel] = { lavender , overlay1},
 };
 
 /* tagging */
@@ -64,7 +81,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg, "-nf", col_hl, "-sb", col_bg2, "-sf", col_hl2, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", base, "-nf", lavender, "-sb", overlay1, "-sf", lavender, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {

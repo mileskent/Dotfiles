@@ -49,7 +49,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # set resolution and refresh rate
-xrandr --output HDMI-A-0 --mode 1920x1080 --rate 144
+xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --output HDMI-A-0 --mode 1920x1080 --rate 60 --left-of DisplayPort-0
 
 # mouse stuff 
 xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Profile Enabled' 0, 1
@@ -58,10 +58,9 @@ xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Speed' -
 # draw wallpaper
 nitrogen --restore &
 
-/bin/bash ~/.suckless/udbar.sh &
-
 xbindkeys
 
 # start dwm
+exec dwmblocks &
 exec dwm
 
