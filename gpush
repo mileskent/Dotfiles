@@ -1,0 +1,4 @@
+#!/bin/bash
+git add -A && git status
+read -p "Commit Msg: " commitmsg
+git commit -m $commitmsg && git push origin
