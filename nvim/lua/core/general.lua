@@ -26,3 +26,4 @@ vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.cmd('hi CursorLine cterm=bold ctermbg=black')
 
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
