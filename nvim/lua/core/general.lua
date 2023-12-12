@@ -3,12 +3,10 @@ vim.cmd('syntax on')
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.api.nvim_set_keymap('n', '<C-j>', ':<C-u>execute "normal! 5j"<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-k>', ':<C-u>execute "normal! 5k"<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<C-j>', '<Esc>:<C-u>execute "normal! 5j"<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<C-k>', '<Esc>:<C-u>execute "normal! 5k"<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<C-j>', '<Esc>:<C-u>execute "normal! 5j"<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<C-k>', '<Esc>:<C-u>execute "normal! 5k"<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-j>', '5j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-k>', '5k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-l>', '5l', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-h>', '5h', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>h', ":nohlsearch<CR>")
 
