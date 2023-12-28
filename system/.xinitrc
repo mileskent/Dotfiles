@@ -48,12 +48,17 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+
+/usr/bin/sudo /usr/bin/systemctl start NetworkManager.service
 # set resolution and refresh rate
-xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --output HDMI-A-0 --mode 1920x1080 --rate 60 --left-of DisplayPort-0
+# xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144
+# xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60 --left-of DisplayPort-0
+xrandr --output HDMI-A-0 --mode 1920x1080 --rate 144
 
 # mouse stuff 
 xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Profile Enabled' 0, 1
 xinput --set-prop 'pointer:''Razer Razer DeathAdder V2' 'libinput Accel Speed' -0.1
+
 
 # draw wallpaper
 nitrogen --restore &
