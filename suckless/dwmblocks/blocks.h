@@ -1,9 +1,10 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-    {"", "~/.suckless/dwmblocks/commands/getwifi.sh", 5, 0}, // Ssid and wifi icon
+    {"", "curl -s https://wttr.in/?format=%C+%c+%t", 60*10, 0}, // Ssid and wifi icon
+    {" ", "~/.suckless/dwmblocks/commands/getwifi.sh", 5, 0}, // Ssid and wifi icon
     {"", "~/.suckless/dwmblocks/commands/getvolume.sh", 0, 10}, // volume
-    {"  ", "date +'%a, %b %d'", 1, 0}, // date
-    {" ", "date +'%H:%M:%S'", 1, 0} // time
+    {"📅", "date +'%a, %b %d'", 1, 0}, // date
+    {"🕘", "date +'%H:%M:%S'", 1, 0} // time
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
