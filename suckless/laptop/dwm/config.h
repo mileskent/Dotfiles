@@ -22,6 +22,7 @@ static const char *colors[][3]      = {
 static const char *tags[] = { "α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι" };
 
 static const Rule rules[] = {
+	{"Librewolf", NULL, NULL, 1<<8, 0, -1}
 };
 
 /* layout(s) */
