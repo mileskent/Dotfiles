@@ -25,12 +25,6 @@ fi
 
 if [ -f "$userresources" ]; then
 
-
-
-
-
-
-
     xrdb -merge "$userresources"
 
 fi
@@ -48,13 +42,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# set resolution and refresh rate
-xrandr --output eDP-1 --mode 1920x1080 --rate 60
-
-# mouse stuff 
-xinput --set-prop 'pointer:''1A582011:00 06CB:CD73 Touchpad' 'libinput Accel Profile Enabled' 0, 1
-xinput --set-prop 'pointer:''1A582011:00 06CB:CD73 Touchpad' 'libinput Accel Speed' -0.1
-
-# start dwm
+xset b off
+xbindkeys
+nitrogen --restore
+exec dwmblocks &
 exec dwm
-
