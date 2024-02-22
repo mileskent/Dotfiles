@@ -21,12 +21,9 @@ vim.opt.expandtab = true
 
 vim.cmd[[set mouse=]] -- No mouse crutch!!!
 vim.cmd[[set linebreak]]
-<<<<<<< HEAD
-=======
 vim.cmd[[set breakindent]]
 vim.cmd[[set formatoptions=1]]
 vim.cmd[[set lbr]]
->>>>>>> e712aeb (Updated vimtex)
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.autoread = true
@@ -41,7 +38,6 @@ vim.cmd('hi CursorLine cterm=bold ctermbg=black')
 -- VIMTEX
 vim.cmd[[
 filetype plugin indent on
-syntax enable
 let g:vimtex_view_method = 'zathura'
 let maplocalleader = "\\"
 ]]
@@ -69,4 +65,6 @@ require("luasnip").config.set_config({ -- Setting LuaSnip config
   -- Use Tab (or some other key if you prefer) to trigger visual selection
   store_selection_keys = "<Tab>",
 })
+
+
 
