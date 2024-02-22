@@ -17,6 +17,9 @@ vim.opt.expandtab = true
 
 vim.cmd[[set mouse=]] -- No mouse crutch!!!
 vim.cmd[[set linebreak]]
+vim.cmd[[set breakindent]]
+vim.cmd[[set formatoptions=1]]
+vim.cmd[[set lbr]]
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.autoread = true
