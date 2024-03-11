@@ -20,6 +20,7 @@ vim.cmd[[set linebreak]]
 vim.cmd[[set breakindent]]
 vim.cmd[[set formatoptions=1]]
 vim.cmd[[set lbr]]
+vim.cmd[[set so=999]]
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.autoread = true
