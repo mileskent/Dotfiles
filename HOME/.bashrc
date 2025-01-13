@@ -1,16 +1,14 @@
 [[ $- != *i* ]] && return # If not running interactively, don't do anything
 
 # ALIASES
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+alias ls='eza'
+alias la='eza -a'
 alias c='clear'
+alias grep='grep --color=auto'
 alias cp='cp -rv'
-alias la='ls -a'
-alias lt='ls -t'
 alias gadd='git add -A && git status'
 alias lzc='git commit -m "$(date)"' # lazy commit
-alias gp='git push -u origin'
-alias cat='ccat'
+alias cat='bat'
 
 # MISC
 eval "$(fzf --bash)"
