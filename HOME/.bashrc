@@ -8,6 +8,8 @@ alias grep='grep --color=auto'
 alias cp='cp -rv'
 alias gadd='git add -A && git status'
 alias lzc='git commit -m "$(date)"' # lazy commit
+alias gp='git pull'
+alias lg='lazygit'
 alias cat='bat'
 
 # MISC
