@@ -9,6 +9,7 @@ alias cp='cp -rv'
 alias gadd='git add -A && git status'
 alias lzc='git commit -m "$(date)"' # lazy commit
 alias gp='git pull'
+alias gP='git push'
 alias lg='lazygit'
 alias cat='bat'
 
