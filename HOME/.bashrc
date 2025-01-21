@@ -12,6 +12,7 @@ alias gp='git pull'
 alias gP='git push'
 alias lg='lazygit'
 alias cat='bat'
+alias open='xdg-open'
 
 # MISC
 eval "$(fzf --bash)"
