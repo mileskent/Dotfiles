@@ -15,3 +15,4 @@ vim.cmd[[set showcmd]]
 vim.cmd[[set number]]
 vim.cmd[[set relativenumber]]
 vim.o.cursorlineopt = 'both'
+vim.opt.termguicolors = true
