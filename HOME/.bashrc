@@ -1,5 +1,11 @@
 [[ $- != *i* ]] && return # If not running interactively, don't do anything
 
+# Zh support
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export GLFW_IM_MODULE=ibus
+
 # ALIASES
 alias ls='eza'
 alias la='eza -a'
